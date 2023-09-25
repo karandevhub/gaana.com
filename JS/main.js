@@ -12,7 +12,12 @@ function bootupApp() {
 
 function fetchAndRenderAllSections() {
   fetch('/JS/gaana.json')
-    .then((res) => res.json())
+    .then((res) => {
+      if (!res.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return res.json();
+    })
     .then((res) => {
       const { cardbox } = res;
       if (Array.isArray(cardbox) && cardbox.length) {
@@ -21,8 +26,12 @@ function fetchAndRenderAllSections() {
           renderSection(songsbox, songscards);
         });
       }
+    })
+    .catch((error) => {
+      console.error('Error fetching or parsing data:', error);
     });
 }
+
 
 function renderSection(title, songsList) {
   const songsSection = makeSectionDom(title, songsList);
