@@ -10,18 +10,17 @@
           "playlist": [
             {
               "id": 0,
-              "playlist_type":false,
+              "playlist_type": false,
               "playlist": null,
               "song_name": "paro",
               "album_name": "pyaar ka panchnaman 2",
               "singers": "",
               "image_source": "assets/images/ppk2.jpg",
-              "duration":"2",
+              "duration": "2",
               "quality": {
                 "low": "assets/songs/paro.mp3",
                 "medium": "",
                 "high": ""
-               
               },
               "release_date": "date"
             },
@@ -41,15 +40,17 @@
               "release_date": "date"
             }
           ],
-
           "song_name": "ganna top 50",
           "album_name": "",
           "singers": "",
           "image_source": "assets/images/ganna_top50.jpg",
-          "quality": { "low": "", "medium": "", "high": "" },
+          "quality": {
+            "low": "",
+            "medium": "",
+            "high": ""
+          },
           "release_date": "date"
         },
-
         {
           "id": 1,
           "playlist_type": true,
@@ -89,15 +90,15 @@
           "album_name": "",
           "singers": "",
           "image_source": "assets/images/top_50.jpg",
-          "quality": { "low": "", "medium": "", "high": "" },
+          "quality": {
+            "low": "",
+            "medium": "",
+            "high": ""
+          },
           "release_date": "date"
         }
       ]
     },
-
-
-
-    
     {
       "songsbox": "Latest Albums",
       "songscards": [
@@ -348,7 +349,6 @@
         }
       ]
     },
-
     {
       "songsbox": "top trending",
       "songscards": [
