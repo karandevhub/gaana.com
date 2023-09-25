@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gaana clone</title>
+  <link rel="stylesheet" href="CSS/main.css" />
+</head>
+
+<body >
+  <header class="header">
+    <div class="head-container container">
+      <div class="hamburger-menu">
+        <img src="assets/svg/menu.svg" alt="">
+      </div>
+      <a class="header-logo">
+        <img src="assets/svg/logo.svg" alt="">
+      </a>
+
+      <button id="search-button" class="search-input">
+        <div class="search-icon">
+          <svg width="18" height="18" viewBox="0 0 25 25">
+            <path class="svg_color" fill="#8e8e93" fill-rule="evenodd"
+              d="M10.5 2A6.5 6.5 0 0 1 17 8.5c0 1.6-.6 3.1-1.56 4.23l.27.27h.8l5 5-1.5 1.5-5-5v-.8l-.27-.27C13.55 14.447 12.05 15 10.5 15a6.5 6.5 0 1 1 0-13zm0 2A4.48 4.48 0 0 0 6 8.5a4.48 4.48 0 0 0 4.5 4.5A4.48 4.48 0 0 0 15 8.5 4.48 4.48 0 0 0 10.5 4z">
+            </path>
+          </svg>
+        </div>
+        <input id="search-input" class="header-search" type="text" placeholder="search artist, Songs, Albums"/>
+        <div id="search-input-div" class="search-list">
+          <input id="text-search" class="header-search-after" type="text" placeholder="search artist, Songs, Albums" />
+          <ul id="search-list">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </button>
+      
+
+      <button class="header-btn">
+        Go Add Free<span class="floating-badge">NEW</span>
+      </button>
+      <button class="header-btn">Get Ganna Plus</button>
+
+      <button class="lang-btn">
+        <svg width="32" height="24" viewBox="0 0 20 16">
+          <g fill="none" fill-rule="evenodd">
+            <g transform="translate(-1108 -117) translate(1089 58) translate(19 15) translate(0 43) translate(.5 1.5)">
+              <rect class="svg_box" width="11" height="11" x="7.591" y="3.5" fill="#FFF" stroke="#8E8E93" rx="5.5">
+              </rect>
+              <rect class="svg_box" width="11" height="11" x=".5" y=".5" fill="#FFF" stroke="#8E8E93" rx="5.5"></rect>
+              <text fill="#8E8E93" font-size="7" font-weight="500">
+                <tspan x="3.5" y="9">A</tspan>
+              </text>
+              <text fill="#8E8E93" font-size="5" font-weight="500">
+                <tspan x="12" y="11.5">अ</tspan>
+              </text>
+            </g>
+          </g>
+        </svg>
+      </button>
+
+      <button class="brigtness-btn">
+        <svg width="28" height="28" viewBox="0 0 30 30">
+          <g fill="none" fill-rule="evenodd">
+            <g class="svg_stroke" fill-rule="nonzero" stroke="#000" stroke-width=".5">
+              <path
+                d="M18.062 15.441c-2.222 1.13-4.847 1.148-7.084.047-2.237-1.1-3.825-3.19-4.287-5.64-.526-2.94.62-5.93 2.975-7.768.241-.185.321-.512.193-.787-.119-.279-.415-.438-.714-.384h-.002c-2.678.463-5.047 2.012-6.545 4.28-1.497 2.269-1.99 5.055-1.364 7.7.568 2.587 2.164 4.833 4.42 6.22 2.087 1.27 4.565 1.739 6.972 1.319.193-.034.386-.074.577-.12 1.393-.337 2.697-.971 3.822-1.859.72-.584 1.35-1.27 1.872-2.036.174-.247.158-.58-.04-.81-.196-.23-.524-.296-.795-.162zm-1.447 2.489c-1.05.828-2.266 1.42-3.566 1.735-2.406.567-4.938.165-7.05-1.12-2.104-1.295-3.591-3.39-4.12-5.803-.587-2.469-.127-5.07 1.271-7.189C4.548 3.436 6.76 1.99 9.26 1.56 6.71 3.55 5.47 6.788 6.042 9.972c.5 2.653 2.219 4.916 4.641 6.109 2.422 1.193 5.264 1.176 7.672-.046-.485.713-1.07 1.352-1.74 1.896h0v-.001z"
+                transform="translate(5 5)"></path>
+            </g>
+          </g>
+        </svg>
+      </button>
+      <a href="#" class="login">Log In/Sign up</a>
+    </div>
+  </header>
+
+  <!-- navigation-bar -->
+
+  <nav class="navigation">
+    <div class="nav-container container">
+      <a href="" class="nav-list">All</a>
+      <a href="" class="nav-list">Trending Songs</a>
+      <a href="" class="nav-list">New Songs</a>
+      <a href="" class="nav-list">Old Songs</a>
+      <button class="nav-drop-menu">
+        Mood & Genres
+        <svg width="8" height="14" viewBox="0 0 10 17">
+          <path class="svg_color" fill="rgba(39, 37, 37, 0.75)" fill-rule="evenodd"
+            d="M1.414 0L0 1.414l7 7-7 7 1.414 1.414 8.414-8.414z"></path>
+        </svg>
+        <div class="drop-menu-list">
+          <ul>
+            <li><a href="">EDM</a></li>
+            <li><a href="">Bhakti</a></li>
+            <li><a href="">90s</a></li>
+            <li><a href="">Rommance</a></li>
+            <li><a href="">Party</a></li>
+            <li><a href="">Indie</a></li>
+            <li><a href="">Ghazals</a></li>
+            <li><a href="">Dance</a></li>
+            <li><a href="">Kid</a></li>
+            <li><a href="">Retro</a></li>
+        </div>
+      </button>
+      <a href="" class="nav-list">Album</a>
+      <a href="" class="nav-list">Radio</a>
+      <a href="" class="nav-list">Podcast</a>
+      <a href="" class="nav-list">My Music</a>
+    </div>
+  </nav>
+
+  <!-- main content -->
+  <section class="container main-container">
+
+    <main class="left-songs-container">
+      <!-- top carousel section -->
+
+      <section class="top-carousel"></section>
+
+      <!-- songs section -->
+
+      <section class="songs" id="songs"></section>
+      
+      <section class="songs-section">
+        <div class="card-head">
+          <h1>Featured Artists</h1>
+        </div>
+        <div class="song-cards-container">
+
+          <div class="artist-card">
+            <div class="artist-image"><a href="#"><img src="assets/singer-img/arijit.webp" alt=""></a></div>
+            <a class="artist-name" href="#">Arijit Singh</a>
+          </div>
+
+          <div class="artist-card">
+            <div class="artist-image"><a href="#"><img src="assets/singer-img/ALKA.jpg" alt=""></a></div>
+            <a class="artist-name" href="#">Alka Yagnik</a>
+          </div>
+
+          <div class="artist-card">
+            <div class="artist-image"><a href="#"><img src="assets/singer-img/Armaan-Malik.jpg" alt=""></a></div>
+            <a class="artist-name" href="#">Armaan Malik</a>
+          </div>
+
+          <div class="artist-card">
+            <div class="artist-image"><a href="#"><img src="assets/singer-img/kk.jpg.webp" alt=""></a></div>
+            <a class="artist-name" href="#">KK</a>
+          </div>
+
+          <div class="artist-card">
+            <div class="artist-image"><a href="#"><img src="assets/singer-img/kumar sanu.jpg" alt=""></a></div>
+            <a class="artist-name" href="#">Kumar Sanu</a>
+          </div>
+
+          <div class="artist-card">
+            <div class="artist-image"><a href="#"><img src="assets/singer-img/sonu nigam.webp" alt=""></a></div>
+            <a class="artist-name" href="#">Sonu Nigam</a>
+          </div>
+      </section>
+
+
+    </main>
+
+    <!-- aside-section -->
+    <aside class="right-ads-container">
+
+    </aside>
+  </section>
+
+
+
+
+  <!-- footer- secion -->
+
+  <footer class="container">
+    <div class="footer">
+      <div class="row1">
+        <strong>Bas Bajna Chahiye Gaana</strong>
+        <p>Gaana is the one-stop solution for all your music needs. Gaana offers you free, unlimited access to over 30
+          million Hindi Songs, Bollywood Music, English MP3 songs, Regional Music Mirchi Play.</p>
+      </div>
+      <hr>
+      <div class="social-media-links">
+        <a href=""><img class="facebook" src="assets/svg/asset 11.svg" alt=""></a>
+        <a href=""><img class="twitter" src="assets/svg/asset 12.svg" alt=""></a>
+      </div>
+      <hr>
+      <div class="copyright-section">
+        <p>© Gamma Gaana Ltd. 2023, All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- music-player  box -->
+
+  <div class="music-player"  id="music-player-container">
+     <!-- Music Player Progress Bar -->
+  <div id="progress-bar-container">
+    <div id="progress-bar"></div>
+  </div>
+       <!-- Music Player-->
+       
+    <audio style="display: none;" id="music-player" controls="controls" preload="auto" type="audio/ogg" ></audio>
+    <div class="music-player-left">
+      <div class="song-box">
+        <img class="current-song-img" id="current-song-img"
+          src="https://a10.gaanacdn.com/gn_img/albums/R7vKX66Wmr/vKX6ZwDzWm/size_m.jpg" alt="True Stories"
+          title="True Stories">
+        <a href="#" class="current-song-name" id="current-song-name">song name</a>
+      </div>
+      <div class="current-song-menu">
+        <div class="current-music-playing"></div>
+        <button class="add-to-favouraite" title="Add to favorites"><svg class="fav " width="18" height="18"
+            viewBox="0 0 19 19">
+            <g fill=" #ca0000" fill-rule="evenodd">
+              <path class="svg_color" fill-rule="nonzero"
+                d="M9 17.792l-1.208-1.1C3.5 12.8.667 10.225.667 7.083.667 4.508 2.683 2.5 5.25 2.5c1.45 0 2.842.675 3.75 1.733A5.011 5.011 0 0 1 12.75 2.5c2.567 0 4.583 2.008 4.583 4.583 0 3.142-2.833 5.717-7.125 9.609L9 17.792z">
+              </path>
+            </g>
+          </svg></button>
+        <a href=""><img src="assets/svg/three-dot.svg" alt="" class="song-settings"></a>
+      </div>
+    </div>
+
+    <div class="music-controls">
+      <div class="song-timer">
+        <span id="song-start-time">00:00</span>
+        <span>/</span>
+        <span id="song-current-time">00:00</span>
+      </div>
+      <div class="song-loop">
+        <img src="assets/svg/loop.svg" alt="">
+      </div>
+      <div class="left-song" onclick="playPreviousSong()"><img src="assets/svg/song-left.svg" alt=""></div>
+      <div class="play-pause" onclick="togglePlayer()">
+        <div id="play" class="play"><img src="assets/svg/pause.svg" alt=""></div>
+        <div id="pause" class="pause"><svg width="16" height="16" viewBox="0 0 24 24">
+            <path class="svg_color" fill="white" d="M14 19h4V5h-4v14zm-8 0h4V5H6v14z"></path>
+          </svg></div>
+      </div>
+      <div class="right-song"  onclick="playNextSong()" ><img src="assets/svg/song-left.svg" alt=""></div>
+      <div class="shuffle"><img src="assets/svg/shuffle.svg" alt=""></div>
+    </div>
+
+    <div class="music-player-right">
+      <div class="song-volume"><img src="assets/svg/volume.svg" alt=""></div>
+      <button class="song-quality">Audio:High</button>
+    </div>
+
+  </div>
+
+  <script src="JS/main.js"></script>
+</body>
+
+</html>
